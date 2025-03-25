@@ -105,9 +105,9 @@ if [[ -f "$(pwd)/pyproject.toml" ]]; then
     echo -e "${BLUE}Installing from local source...${NC}"
     pipx install "$(pwd)" --force
 else
-    # Install from GitHub (replace with proper URL when published)
+    # Install from GitHub
     echo -e "${BLUE}Installing from GitHub...${NC}"
-    pipx install "git+https://github.com/yourusername/playwright-universal-mcp.git" --force
+    pipx install "git+https://github.com/xkiranj/playwright-universal-mcp.git" --force
 fi
 
 # Install the selected browsers

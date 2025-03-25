@@ -23,8 +23,8 @@ dependencies = [
 requires-python = ">=3.8"
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/playwright-universal-mcp"
-"Bug Tracker" = "https://github.com/yourusername/playwright-universal-mcp/issues"
+"Homepage" = "https://github.com/xkiranj/playwright-universal-mcp"
+"Bug Tracker" = "https://github.com/xkiranj/playwright-universal-mcp/issues"
 
 [project.scripts]
 playwright-universal-mcp = "playwright_universal_mcp.cli:main"
