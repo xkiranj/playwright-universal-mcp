@@ -13,11 +13,11 @@ import sys
 import logging
 from typing import Dict, List, Optional, Any, Union
 
-from mcp.server.models import InitializationOptions
-import mcp.types as types
-from mcp.server import NotificationOptions, Server
+from modelcontextprotocol.server.models import InitializationOptions
+import modelcontextprotocol.types as types
+from modelcontextprotocol.server import NotificationOptions, Server
 from pydantic import AnyUrl
-import mcp.server.stdio
+import modelcontextprotocol.server.stdio
 
 from playwright.async_api import async_playwright, Browser, Page, BrowserContext
 
@@ -460,7 +460,7 @@ async def main():
     logger.info(f"Starting Playwright Universal MCP Server ({CONFIG['browser_type']})")
     try:
         # Run the server using stdin/stdout streams
-        async with mcp.server.stdio.stdio_server() as (read_stream, write_stream):
+        async with modelcontextprotocol.server.stdio.stdio_server() as (read_stream, write_stream):
             await server.run(
                 read_stream,
                 write_stream,
