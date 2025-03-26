@@ -15,6 +15,9 @@ A universal [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) ser
 ### Option 1: Install with pipx (recommended)
 
 ```bash
+# Install the MCP Python SDK
+pip install git+https://github.com/microsoft/mcp-python-sdk.git
+
 # Install the MCP server globally
 pipx install playwright-universal-mcp
 
@@ -31,6 +34,9 @@ playwright install firefox webkit msedge chrome
 python -m venv playwright-mcp-venv
 source playwright-mcp-venv/bin/activate
 
+# Install the MCP Python SDK
+pip install git+https://github.com/microsoft/mcp-python-sdk.git
+
 # Install the package
 pip install playwright-universal-mcp
 
@@ -42,8 +48,11 @@ playwright install chromium
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/playwright-universal-mcp.git
+git clone https://github.com/xkiranj/playwright-universal-mcp.git
 cd playwright-universal-mcp
+
+# Install the MCP Python SDK
+pip install git+https://github.com/microsoft/mcp-python-sdk.git
 
 # Install the package
 pip install -e .
